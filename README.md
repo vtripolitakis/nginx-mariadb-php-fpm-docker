@@ -12,15 +12,16 @@ I used:
 
 ## Installation
 
-### First, start it up
-```bash
-docker compose up -d
-```
 
-### Second, create an `app` and a `db` folder to host the application and the database files, respectively
+### First, create an `app` and a `db` folder to host the application and the database files, respectively
 ```bash
 mkdir app
 mkdir db
+```
+
+### Second, start it up
+```bash
+docker compose up -d
 ```
 
 ### Third, get into the MariaDB container (hint: pass is 123)
