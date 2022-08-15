@@ -13,20 +13,14 @@ I used:
 ## Installation
 
 
-### First, create an `app` and a `db` folder to host the application and the database files, respectively
-```bash
-mkdir app
-mkdir db
-```
-
-### Second, start it up
+### First, start it up
 ```bash
 docker compose up -d
 ```
 
-### Third, get into the MariaDB container (hint: pass is 123)
+### Second, get into the MariaDB container (hint: pass is 123)
 ```bash
-docker exec -it docker-db-1 mysql -u root -p 
+docker exec -it nginx-mariadb-php-fpm-docker-db-1 mysql -u root -p 
 ```
 then create your database, for example:
 
@@ -34,7 +28,7 @@ then create your database, for example:
 create database mydb default character set utf8 default collate utf8_general_ci;
 ```
 
-### Fourth, add your app code and populate your database. Your application is served on `http://localhost` or `http://myapp.local` given you added on your `hosts` file the following line: `127.0.0.1 myapp.local`
+### Third, add your app code and populate your database. Your application is served on `http://localhost` or `http://myapp.local` given you added on your `hosts` file the following line: `127.0.0.1 myapp.local`
 
 
 
