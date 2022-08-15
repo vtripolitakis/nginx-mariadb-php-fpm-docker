@@ -18,7 +18,8 @@ I used:
 docker compose up -d
 ```
 
-### Second, get into the MariaDB container (hint: pass is 123)
+### Second, get into the MariaDB container
+#### host: db, user: root, password: 123
 ```bash
 docker exec -it nginx-mariadb-php-fpm-docker-db-1 mysql -u root -p 
 ```
